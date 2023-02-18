@@ -1,0 +1,385 @@
+:root {
+    --primeryColor: #ff274b;
+    --secondaryColor: #f7bcf7;
+    --lightColor: #ffffff;
+    --bgColor-1: #171a1c;
+    --bgColor-2: #222822;
+    --padding: 8%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: var(--lightColor);
+}
+
+h1 {
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+    color: var(--secondaryColor);
+}
+
+
+span {
+    color: var(--primeryColor);
+}
+
+h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+h5 {
+    font-size: 1.37rem;
+    letter-spacing: 0.12rem;
+    color: var(--secondaryColor);
+}
+p {
+    color: var(--secondaryColor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+/* ------------------------------------------
+------------------- HOME
+---------------------------------------------
+*/
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    padding-top: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+nav ul li a:hover{
+    color: var(--primeryColor);
+    
+}
+
+.btn {
+    color: var(--lightColor);
+    background-color: var(--primeryColor);
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--primeryColor);
+}
+
+.content {
+    flex-grow: 1;
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-txt {
+    position: relative;
+    bottom: 70px;
+}
+
+
+
+.social {
+    margin-top: 3.5rem;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social img {
+    margin-right: 2rem;
+    width: 2rem;
+    transition: 0.4s;
+}
+
+.social img:hover {
+    transform: scale(1.2)
+}
+
+.home .container-imgs {
+    width: 45%;
+    height: 80%;
+    position: relative;
+    align-self: flex-end;
+    margin-top: 460px;
+}
+
+.home .container-imgs img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 400px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.home .container-imgs:hover .shape{
+    bottom: 40px;
+}
+
+.home .container-imgs:hover .mypic {
+    left: 40%;
+}
+
+/* ------------------------------------------
+------------------- HOME SECTION
+---------------------------------------------
+*/
+
+.about {
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bgColor-2);
+}
+
+.about .container-imgs {
+    width:35%;
+}
+
+.about .container-imgs img {
+    width: 300px;
+    margin-right: 100px
+}
+
+.about .container-imgs .container-txts {
+    width: 35%;
+}
+
+/* ------------------------------------------
+------------------- SERVICES SECTION
+---------------------------------------------
+*/
+
+.services {
+    background-color: var(--bgColor-1);
+    padding: 2rem var(--padding);
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 300px;
+    background-color: var(--bgColor-2);
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.box .card em {
+    color: var(--primeryColor);
+    width: 3.12rem;
+    margin: 2rem;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* ------------------------------------------
+------------------- SKILLS SECTION
+---------------------------------------------
+*/
+
+.skills {
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bgColor-2);
+}
+
+.skills .container-imgs {
+    width:35%;
+}
+
+.skills .container-imgs img {
+    width: 90%;
+}
+
+.skills .container-imgs .container-txts {
+    width: 35%;
+}
+
+/* ------------------------------------------
+------------------- FOOTER SECTION
+---------------------------------------------
+*/
+
+footer {
+    background-color: var(--bgColor-1);
+    padding: 2rem var(--padding);
+}
+
+footer .content-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .content-footer p {
+    color: var(--lightColor);
+    text-align: center;
+    width: 500px;
+    margin-top: 0.1rem;
+}
+
+footer .content-footer .end {
+    color: var(--primeryColor);
+    margin-top: 1rem;
+}
+
+/* ------------------------------------------
+------------------- HUMBURGER MENU
+---------------------------------------------
+*/
+
+#menu {
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+#menu span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: var(--lightColor);
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+
+/* ------------------------------------------
+------------------- MEDIA QUERIES
+---------------------------------------------
+*/
+
+@media screen and (max-width: 575px){
+    :root {
+        --padding: 1.5rem;
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 82px;
+        padding-top: 0;
+        border-color: var(--bgColor-1);
+        border-bottom: 1px solid var(--bgColor-2);
+        z-index: 100; 
+    }
+
+    nav ul {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--bgColor-2);
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 50px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .home .container-imgs {
+        display: none; 
+    }
+    
+
+    .content-txt{
+        bottom: 0em;
+    }
+
+    .social {
+        margin-top: 70px;
+    }
+
+    h3 {
+        margin-bottom: 70px;
+    }
+
+    #menu {
+        display: block;
+    }
+}
+
